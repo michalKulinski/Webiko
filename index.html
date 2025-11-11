@@ -1,0 +1,1740 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO Meta Tags -->
+  <title>Bezpłatna Diagnoza 30 min - Odkryj Ukryte Luki w Widoczności | Webiko</title>
+  <meta name="description" content="Darmowy 30-minutowy audyt marketingu lokalnego. Dowiedz się gdzie tracisz klientów. Bez zobowiązań, bez sales pitchu.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Bezpłatna Diagnoza - Odkryj Co Kosztuje Cię Klientów">
+  <meta property="og:description" content="30 minut + raport 7 luk + plan działania. Zero sprzedaży, same fakty.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://webiko.pl">
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='80' font-size='80' font-family='Arial, sans-serif' font-weight='bold' fill='%23DA2E45'%3Ew%3C/text%3E%3C/svg%3E">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
+
+  <!-- Schema.org Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Marketing lokalny - diagnoza bezpłatna",
+    "provider": {
+      "@type": "Organization",
+      "name": "Webiko",
+      "url": "https://webiko.pl"
+    },
+    "areaServed": "PL",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "PLN"
+    }
+  }
+  </script>
+
+  <style>
+    /* ==================== CSS RESET & BASE ==================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* ==================== CSS VARIABLES (Design System) ==================== */
+    :root {
+      /* Brand Colors */
+      --webiko-red: #DA2E45;
+      --webiko-blue: #2B8AD3;
+
+      /* Neutrals */
+      --graphite: #2A2E36;
+      --bg-primary: #F7F8FA;
+      --bg-white: #FFFFFF;
+      --border-subtle: #E7E9EE;
+      --text-meta: #9AA3AE;
+
+      /* Tints */
+      --red-light: #E24558;
+      --red-dark: #C7283E;
+      --blue-light: #3A96DB;
+      --blue-dark: #2479BD;
+
+      /* Warm accents */
+      --warm-beige: #F4EFEA;
+
+      /* Font families */
+      --font-heading: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+      --font-body: 'Source Sans 3', system-ui, -apple-system, sans-serif;
+      --font-accent: 'Fraunces', Georgia, serif;
+
+      /* Font sizes (fluid typography) */
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.825rem + 0.25vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1.05rem + 0.375vw, 1.25rem);
+      --text-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+      --text-2xl: clamp(1.5rem, 1.35rem + 0.75vw, 2rem);
+      --text-3xl: clamp(2rem, 1.75rem + 1.25vw, 3rem);
+      --text-4xl: clamp(2.5rem, 2rem + 2.5vw, 4rem);
+
+      /* Line heights */
+      --leading-tight: 1.15;
+      --leading-normal: 1.5;
+      --leading-relaxed: 1.75;
+
+      /* Organic spacing */
+      --space-xs: 0.45rem;
+      --space-sm: 0.85rem;
+      --space-md: 1.75rem;
+      --space-lg: 2.3rem;
+      --space-xl: 3.1rem;
+      --space-2xl: 4.2rem;
+      --space-3xl: 5.8rem;
+
+      /* Gap values */
+      --gap-1: 1.75rem;
+      --gap-2: 2.1rem;
+      --gap-3: 2.3rem;
+      --gap-4: 1.9rem;
+
+      /* Shadows (layered, organic) */
+      --shadow-sm:
+        2px 7px 15px rgba(0,0,0,.08),
+        -1px 2px 8px rgba(0,0,0,.05);
+
+      --shadow-md:
+        3px 10px 20px rgba(0,0,0,.1),
+        -2px 3px 10px rgba(0,0,0,.06);
+
+      --shadow-lg:
+        5px 15px 30px rgba(0,0,0,.12),
+        -3px 5px 15px rgba(0,0,0,.08);
+
+      --shadow-hover:
+        2px 12px 25px rgba(0,0,0,.15),
+        -1px 4px 12px rgba(0,0,0,.1);
+
+      /* Custom easing */
+      --ease-smooth: cubic-bezier(.22, .61, .36, 1);
+      --ease-bounce: cubic-bezier(.68, -.55, .265, 1.55);
+
+      /* Durations */
+      --duration-fast: 220ms;
+      --duration-normal: 280ms;
+      --duration-slow: 420ms;
+    }
+
+    /* ==================== BASE STYLES ==================== */
+    body {
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      line-height: var(--leading-normal);
+      color: var(--graphite);
+      background: var(--bg-primary);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-heading);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: var(--leading-tight);
+      color: var(--graphite);
+    }
+
+    h1 {
+      font-size: var(--text-4xl);
+    }
+
+    h2 {
+      font-size: var(--text-3xl);
+    }
+
+    h3 {
+      font-size: var(--text-xl);
+    }
+
+    p {
+      margin-bottom: var(--space-md);
+    }
+
+    a {
+      color: var(--webiko-blue);
+      text-decoration: none;
+      transition: color var(--duration-fast) var(--ease-smooth);
+    }
+
+    a:hover {
+      color: var(--blue-dark);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Accent numbers */
+    .accent-number {
+      font-family: var(--font-accent);
+      font-weight: 600;
+      font-variation-settings: 'opsz' 72;
+      color: var(--webiko-red);
+    }
+
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Section spacing */
+    section {
+      padding: var(--space-3xl) 0;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s var(--ease-smooth), transform 0.6s var(--ease-smooth);
+    }
+
+    section.fade-in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Focus states (accessibility) */
+    :focus-visible {
+      outline: 2px solid var(--webiko-blue);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+
+    /* ==================== BUTTONS ==================== */
+    .btn-primary {
+      display: inline-block;
+      background: var(--webiko-red);
+      color: white;
+      padding: 0.9rem 1.8rem;
+      border-radius: 14px;
+      font-weight: 600;
+      font-size: var(--text-base);
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition:
+        transform var(--duration-normal) var(--ease-smooth),
+        box-shadow var(--duration-normal) var(--ease-smooth);
+      font-family: var(--font-body);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow:
+        0 8px 20px rgba(218, 46, 69, 0.3),
+        0 3px 8px rgba(218, 46, 69, 0.2);
+    }
+
+    .btn-primary:active {
+      transform: translateY(0);
+    }
+
+    .btn-hero {
+      font-size: var(--text-lg);
+      padding: 1.2rem 2.5rem;
+    }
+
+    .btn-submit {
+      width: 100%;
+      padding: 1.2rem 2rem;
+      font-size: var(--text-lg);
+    }
+
+    .btn-primary.loading::after {
+      content: '';
+      display: inline-block;
+      width: 1rem;
+      height: 1rem;
+      border: 2px solid white;
+      border-top-color: transparent;
+      border-radius: 50%;
+      animation: spin 0.6s linear infinite;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    /* ==================== HEADER (Sticky Topbar) ==================== */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: var(--space-md) 0;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: var(--font-heading);
+      font-size: var(--text-xl);
+      font-weight: 700;
+      color: var(--webiko-red);
+    }
+
+    .header-phone {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--graphite);
+      font-weight: 600;
+      font-size: var(--text-base);
+    }
+
+    .header-phone svg {
+      width: 20px;
+      height: 20px;
+      fill: var(--webiko-blue);
+    }
+
+    /* ==================== HERO SECTION ==================== */
+    #hero {
+      background: linear-gradient(135deg, var(--bg-white) 0%, var(--bg-primary) 100%);
+      padding-top: var(--space-2xl);
+      padding-bottom: var(--space-3xl);
+      position: relative;
+      overflow: hidden;
+      opacity: 1;
+      transform: none;
+    }
+
+    #hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 600px;
+      height: 600px;
+      background: var(--webiko-red);
+      opacity: 0.03;
+      border-radius: 50%;
+      z-index: 0;
+    }
+
+    #hero::after {
+      content: '';
+      position: absolute;
+      bottom: -30%;
+      left: -10%;
+      width: 400px;
+      height: 400px;
+      background: var(--webiko-blue);
+      opacity: 0.03;
+      border-radius: 50%;
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero-content h1 {
+      margin-bottom: var(--space-md);
+      animation: fadeInUp 0.8s var(--ease-smooth) forwards;
+    }
+
+    .hero-content h2 {
+      font-size: var(--text-xl);
+      font-weight: 500;
+      color: var(--text-meta);
+      margin-bottom: var(--space-xl);
+      line-height: var(--leading-relaxed);
+      font-family: var(--font-body);
+      animation: fadeInUp 0.8s var(--ease-smooth) 0.2s forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero-benefits {
+      list-style: none;
+      margin: var(--space-xl) 0;
+      text-align: left;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      animation: fadeInUp 0.8s var(--ease-smooth) 0.4s forwards;
+      opacity: 0;
+    }
+
+    .hero-benefits li {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-sm);
+      margin-bottom: var(--space-md);
+      font-size: var(--text-lg);
+      line-height: var(--leading-relaxed);
+    }
+
+    .hero-benefits li::before {
+      content: '✓';
+      color: var(--webiko-blue);
+      font-weight: 700;
+      font-size: var(--text-xl);
+      flex-shrink: 0;
+    }
+
+    .hero-cta {
+      margin-top: var(--space-xl);
+      animation: fadeInUp 0.8s var(--ease-smooth) 0.6s forwards;
+      opacity: 0;
+    }
+
+    .cta-reassurance {
+      margin-top: var(--space-md);
+      font-size: var(--text-sm);
+      color: var(--text-meta);
+    }
+
+    .trust-inline {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-lg);
+      flex-wrap: wrap;
+      margin-top: var(--space-xl);
+      animation: fadeInUp 0.8s var(--ease-smooth) 0.8s forwards;
+      opacity: 0;
+    }
+
+    .trust-inline span {
+      font-size: var(--text-sm);
+      color: var(--text-meta);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    /* ==================== SOCIAL PROOF SECTION ==================== */
+    #social-proof {
+      background: var(--bg-white);
+    }
+
+    #social-proof h2 {
+      text-align: center;
+      margin-bottom: var(--space-2xl);
+    }
+
+    .social-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--gap-2);
+    }
+
+    .testimonial,
+    .trust-numbers-card,
+    .mini-case {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: var(--space-lg);
+      transition:
+        transform var(--duration-normal) var(--ease-smooth),
+        box-shadow var(--duration-normal) var(--ease-smooth);
+    }
+
+    .testimonial:hover,
+    .mini-case:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .testimonial-photo {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: var(--space-md);
+      border: 3px solid var(--webiko-blue);
+    }
+
+    .testimonial blockquote {
+      font-style: italic;
+      margin-bottom: var(--space-md);
+      line-height: var(--leading-relaxed);
+    }
+
+    .testimonial footer {
+      font-size: var(--text-sm);
+    }
+
+    .testimonial footer strong {
+      display: block;
+      margin-bottom: 0.25rem;
+      color: var(--graphite);
+    }
+
+    .testimonial .meta {
+      color: var(--text-meta);
+    }
+
+    .trust-numbers-card {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-lg);
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat .accent-number {
+      display: block;
+      font-size: var(--text-3xl);
+      margin-bottom: 0.25rem;
+    }
+
+    .stat-label {
+      display: block;
+      font-size: var(--text-sm);
+      color: var(--text-meta);
+    }
+
+    .mini-case h3 {
+      color: var(--webiko-red);
+      margin-bottom: var(--space-sm);
+    }
+
+    .mini-case p {
+      margin-bottom: 0;
+    }
+
+    /* ==================== DELIVERABLES SECTION ==================== */
+    #deliverables {
+      background: var(--bg-primary);
+    }
+
+    #deliverables h2 {
+      text-align: center;
+      margin-bottom: var(--space-2xl);
+    }
+
+    .deliverable-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--gap-2);
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: var(--space-lg);
+      transition:
+        transform var(--duration-normal) var(--ease-smooth),
+        box-shadow var(--duration-normal) var(--ease-smooth);
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .card-icon {
+      font-size: var(--text-3xl);
+      margin-bottom: var(--space-md);
+    }
+
+    .card h3 {
+      margin-bottom: var(--space-sm);
+      color: var(--webiko-red);
+    }
+
+    .card p {
+      margin-bottom: 0;
+      line-height: var(--leading-relaxed);
+    }
+
+    /* ==================== PROCESS SECTION ==================== */
+    #process {
+      background: var(--bg-white);
+    }
+
+    #process h2 {
+      text-align: center;
+      margin-bottom: var(--space-2xl);
+    }
+
+    .process-steps {
+      display: flex;
+      flex-direction: column;
+      gap: var(--gap-3);
+    }
+
+    .step {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: var(--space-lg);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+      transition:
+        transform var(--duration-normal) var(--ease-smooth),
+        box-shadow var(--duration-normal) var(--ease-smooth);
+    }
+
+    .step:hover {
+      transform: translateX(5px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .step-number {
+      font-size: var(--text-3xl);
+      margin-bottom: var(--space-sm);
+    }
+
+    .step h3 {
+      color: var(--graphite);
+    }
+
+    .step p {
+      margin-bottom: 0;
+      line-height: var(--leading-relaxed);
+    }
+
+    .step-arrow {
+      display: none;
+    }
+
+    /* ==================== FORM SECTION ==================== */
+    #booking-form {
+      background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-white) 100%);
+    }
+
+    .form-container {
+      max-width: 700px;
+      margin: 0 auto;
+      background: var(--bg-white);
+      border: 1px solid var(--border-subtle);
+      border-radius: 20px;
+      padding: var(--space-2xl);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .form-header {
+      text-align: center;
+      margin-bottom: var(--space-xl);
+    }
+
+    .form-header h2 {
+      margin-bottom: var(--space-md);
+    }
+
+    .form-header p {
+      margin-bottom: 0;
+      color: var(--text-meta);
+    }
+
+    .form-field {
+      margin-bottom: var(--space-lg);
+    }
+
+    .form-field label {
+      display: block;
+      margin-bottom: var(--space-sm);
+      font-weight: 600;
+      color: var(--graphite);
+    }
+
+    .required {
+      color: var(--webiko-red);
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+      width: 100%;
+      padding: 0.9rem 1.2rem;
+      border: 2px solid var(--border-subtle);
+      border-radius: 10px;
+      font-size: var(--text-base);
+      font-family: var(--font-body);
+      color: var(--graphite);
+      transition:
+        border-color var(--duration-fast) var(--ease-smooth),
+        box-shadow var(--duration-fast) var(--ease-smooth);
+    }
+
+    input:focus,
+    select:focus {
+      outline: none;
+      border-color: var(--webiko-blue);
+      box-shadow: 0 0 0 3px rgba(43, 138, 211, 0.1);
+    }
+
+    .field-hint {
+      display: block;
+      margin-top: var(--space-xs);
+      font-size: var(--text-sm);
+      color: var(--text-meta);
+    }
+
+    .form-checkbox {
+      margin-bottom: var(--space-lg);
+      display: flex;
+      gap: var(--space-sm);
+      align-items: flex-start;
+    }
+
+    .form-checkbox input[type="checkbox"] {
+      margin-top: 0.25rem;
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+    }
+
+    .form-checkbox label {
+      font-size: var(--text-sm);
+      line-height: var(--leading-relaxed);
+      cursor: pointer;
+    }
+
+    .form-reassurance {
+      text-align: center;
+      margin-top: var(--space-md);
+      font-size: var(--text-sm);
+      color: var(--text-meta);
+      line-height: var(--leading-relaxed);
+    }
+
+    .privacy-note {
+      margin-top: var(--space-xl);
+      padding-top: var(--space-lg);
+      border-top: 1px solid var(--border-subtle);
+      font-size: var(--text-sm);
+      color: var(--text-meta);
+      text-align: center;
+      line-height: var(--leading-relaxed);
+    }
+
+    /* ==================== CASE STUDY SECTION ==================== */
+    #case-study {
+      background: var(--warm-beige);
+    }
+
+    .case-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .case-label {
+      display: inline-block;
+      background: var(--webiko-red);
+      color: white;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      font-size: var(--text-sm);
+      font-weight: 600;
+      margin-bottom: var(--space-md);
+    }
+
+    .case-container h2 {
+      margin-bottom: var(--space-xl);
+    }
+
+    .case-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: var(--gap-2);
+      margin-bottom: var(--space-xl);
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: var(--space-md);
+      background: var(--bg-white);
+      border-radius: 10px;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .stat-item .accent-number {
+      display: block;
+      font-size: var(--text-3xl);
+      margin-bottom: 0.5rem;
+    }
+
+    .case-quote {
+      font-size: var(--text-lg);
+      line-height: var(--leading-relaxed);
+      font-style: italic;
+      margin-bottom: var(--space-lg);
+      padding: var(--space-lg);
+      background: var(--bg-white);
+      border-left: 4px solid var(--webiko-blue);
+      border-radius: 10px;
+    }
+
+    .case-attribution {
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+    }
+
+    .avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px solid var(--webiko-blue);
+    }
+
+    .case-attribution strong {
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    /* ==================== FAQ SECTION ==================== */
+    #faq {
+      background: var(--bg-white);
+    }
+
+    #faq h2 {
+      text-align: center;
+      margin-bottom: var(--space-2xl);
+    }
+
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      margin-bottom: var(--space-md);
+      overflow: hidden;
+      transition: box-shadow var(--duration-normal) var(--ease-smooth);
+    }
+
+    .faq-item:hover {
+      box-shadow: var(--shadow-md);
+    }
+
+    .faq-item summary {
+      padding: var(--space-lg);
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary h3 {
+      font-size: var(--text-lg);
+      margin: 0;
+    }
+
+    .faq-icon {
+      font-size: var(--text-2xl);
+      color: var(--webiko-blue);
+      font-weight: 300;
+      transition: transform var(--duration-normal) var(--ease-smooth);
+    }
+
+    .faq-item[open] .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      padding: 0 var(--space-lg) var(--space-lg) var(--space-lg);
+      line-height: var(--leading-relaxed);
+    }
+
+    .faq-answer p {
+      margin-bottom: 0;
+    }
+
+    /* ==================== FINAL CTA SECTION ==================== */
+    #final-cta {
+      background: linear-gradient(135deg, var(--webiko-red) 0%, var(--red-dark) 100%);
+      color: white;
+      text-align: center;
+    }
+
+    #final-cta h2 {
+      color: white;
+      margin-bottom: var(--space-md);
+    }
+
+    #final-cta p {
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: var(--space-xl);
+    }
+
+    .btn-scroll {
+      background: white;
+      color: var(--webiko-red);
+    }
+
+    .btn-scroll:hover {
+      background: var(--bg-primary);
+    }
+
+    #final-cta .cta-reassurance {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    /* ==================== FOOTER ==================== */
+    .site-footer {
+      background: var(--graphite);
+      color: white;
+      padding: var(--space-2xl) 0 var(--space-lg) 0;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-xl);
+      text-align: center;
+    }
+
+    .footer-brand {
+      margin-bottom: var(--space-md);
+    }
+
+    .footer-brand p {
+      margin-bottom: 0;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .footer-logo {
+      font-family: var(--font-heading);
+      font-size: var(--text-2xl);
+      font-weight: 700;
+      color: var(--webiko-red);
+      margin-bottom: var(--space-sm);
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--space-lg);
+    }
+
+    .footer-nav a {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: var(--text-sm);
+    }
+
+    .footer-nav a:hover {
+      color: var(--webiko-red);
+    }
+
+    .footer-meta {
+      font-size: var(--text-xs);
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .footer-meta p {
+      margin-bottom: 0.5rem;
+    }
+
+    /* ==================== TOAST NOTIFICATIONS ==================== */
+    .toast {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow-lg);
+      transform: translateY(100px);
+      opacity: 0;
+      transition:
+        transform var(--duration-normal) var(--ease-smooth),
+        opacity var(--duration-normal);
+      z-index: 2000;
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .toast.success {
+      background: #10B981;
+      color: white;
+    }
+
+    .toast.error {
+      background: var(--webiko-red);
+      color: white;
+    }
+
+    /* ==================== RESPONSIVE ==================== */
+    @media (min-width: 768px) {
+      .social-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .process-steps {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--gap-3);
+      }
+
+      .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+      }
+
+      .footer-nav {
+        justify-content: flex-start;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .deliverable-cards {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .process-steps {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    @media (max-width: 767px) {
+      .btn-hero {
+        width: 100%;
+      }
+
+      .trust-inline {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-sm);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">Webiko</div>
+        <a href="tel:+48123456789" class="header-phone">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+          </svg>
+          +48 123 456 789
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Odkryj, Gdzie Tracisz 30% Zleceń<br>w Ciągu 30-Minutowej Diagnozy</h1>
+
+        <h2>Bezpłatna rozmowa + raport 7 luk + plan działania.<br>Bez zobowiązań. Bez sales pitchu. Tylko fakty.</h2>
+
+        <ul class="hero-benefits">
+          <li><strong>30 minut rozmowy</strong> – zrozumiemy Twoją sytuację</li>
+          <li><strong>Raport 7 luk</strong> – dokładnie co naprawić (PDF)</li>
+          <li><strong>Plan działania</strong> – priorytetyzowane kroki na 90 dni</li>
+        </ul>
+
+        <div class="hero-cta">
+          <a href="#booking-form" class="btn-primary btn-hero">Odbierz Moją Darmową Diagnozę</a>
+          <p class="cta-reassurance">Bez karty kredytowej • 100% gratis • Zero presji</p>
+        </div>
+
+        <div class="trust-inline">
+          <span>🔒 Dane chronione</span>
+          <span>📊 500+ audytów</span>
+          <span>📞 Oddzwaniamy w 24h</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SOCIAL PROOF SECTION ==================== -->
+  <section id="social-proof">
+    <div class="container">
+      <h2>Zaufali Nam</h2>
+
+      <div class="social-grid">
+        <!-- Testimonial 1 -->
+        <article class="testimonial">
+          <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #2B8AD3 0%, #1a5a8e 100%); display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.5rem; margin-bottom: 1.75rem; border: 3px solid #2B8AD3;">K</div>
+          <blockquote>
+            <p>Pierwsze zapytanie dostałem po 9 dniach od publikacji. Klient znalazł mnie w Google szukając 'hydraulik miasto'. Zlecenie na 12,000 zł.</p>
+          </blockquote>
+          <footer>
+            <strong>Krzysztof Z.</strong>
+            <span class="meta">Hydraulika • Wrocław</span>
+          </footer>
+        </article>
+
+        <!-- Trust Numbers -->
+        <div class="trust-numbers-card">
+          <div class="stat">
+            <span class="accent-number">500+</span>
+            <span class="stat-label">Audytów przeprowadzonych</span>
+          </div>
+          <div class="stat">
+            <span class="accent-number">100</span>
+            <span class="stat-label">Portali lokalnych</span>
+          </div>
+          <div class="stat">
+            <span class="accent-number">120k</span>
+            <span class="stat-label">UU miesięcznie</span>
+          </div>
+        </div>
+
+        <!-- Mini Case Study -->
+        <article class="mini-case">
+          <h3>180% wzrost zapytań w 60 dni</h3>
+          <p>Firma fotowoltaiczna zwiększyła liczbę zapytań o usługę z 15 do 42 miesięcznie dzięki optymalizacji widoczności lokalnej.</p>
+        </article>
+
+        <!-- Testimonial 2 -->
+        <article class="testimonial">
+          <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #DA2E45 0%, #a02133 100%); display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.5rem; margin-bottom: 1.75rem; border: 3px solid #2B8AD3;">P</div>
+          <blockquote>
+            <p>W 3 miesiące mój kalendarz się zapełnił. Wcześniej żyłem z polecenia – teraz 60% klientów to internet. To działa.</p>
+          </blockquote>
+          <footer>
+            <strong>Piotr M.</strong>
+            <span class="meta">Fotowoltaika • Kraków</span>
+          </footer>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== DELIVERABLES SECTION ==================== -->
+  <section id="deliverables">
+    <div class="container">
+      <h2>Co Dokładnie Odkryjesz w Diagnozie?</h2>
+
+      <div class="deliverable-cards">
+        <article class="card">
+          <div class="card-icon">🔍</div>
+          <h3>Luka #1: Widoczność w Google</h3>
+          <p>Sprawdzimy czy jesteś w top 3 dla kluczowych fraz lokalnych (np. "hydraulik miasto").</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">📍</div>
+          <h3>Luka #2: Wizytówka Google (GBP)</h3>
+          <p>Czy Twoja wizytówka jest zweryfikowana, kompletna i optymalizowana?</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">⭐</div>
+          <h3>Luka #3: Opinie i recenzje</h3>
+          <p>Ile masz opinii vs konkurencja? Jak szybko na nie odpowiadasz?</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🌐</div>
+          <h3>Luka #4: Strona WWW</h3>
+          <p>Mobilna, szybka, z CTA? Sprawdzimy Core Web Vitals.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">📊</div>
+          <h3>Luka #5: Portale lokalne</h3>
+          <p>Czy jesteś widoczny w portalach czytanych przez 5k osób z okolicy?</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">💰</div>
+          <h3>Luka #6: Płatne reklamy</h3>
+          <p>Google Ads, Facebook – czy wydajesz skutecznie czy przepalasz budżet?</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">📞</div>
+          <h3>Luka #7: Ścieżka kontaktu</h3>
+          <p>Jak łatwo klient może Cię znaleźć i zadzwonić? Ile kliknięć to wymaga?</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROCESS SECTION ==================== -->
+  <section id="process">
+    <div class="container">
+      <h2>Jak Przebiega Diagnoza?</h2>
+
+      <div class="process-steps">
+        <article class="step">
+          <div class="step-number accent-number">1</div>
+          <h3>Wypełniasz formularz</h3>
+          <p>Imię, firma, telefon, powiat. To wszystko. Zajmuje 2 minuty.</p>
+        </article>
+
+        <article class="step">
+          <div class="step-number accent-number">2</div>
+          <h3>Odbieramy telefon</h3>
+          <p>Umawiamy termin wygodny dla Ciebie. Wysyłamy przypomnienie.</p>
+        </article>
+
+        <article class="step">
+          <div class="step-number accent-number">3</div>
+          <h3>Rozmowa 30 minut</h3>
+          <p>Analizujemy Twoją sytuację. Pytamy o cele, budżet, konkurencję.</p>
+        </article>
+
+        <article class="step">
+          <div class="step-number accent-number">4</div>
+          <h3>Otrzymujesz raport</h3>
+          <p>PDF z 7 lukami + priorytetyzowany plan działania na 90 dni.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BOOKING FORM SECTION ==================== -->
+  <section id="booking-form">
+    <div class="container">
+      <div class="form-container">
+        <div class="form-header">
+          <h2>Zarezerwuj Swoją Darmową Diagnozę</h2>
+          <p>Wypełnienie zajmuje 2 minuty. Oddzwonimy w ciągu 24 godzin.</p>
+        </div>
+
+        <form id="audit-form">
+          <!-- Imię i Nazwisko -->
+          <div class="form-field">
+            <label for="name">Imię i nazwisko <span class="required">*</span></label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              autocomplete="name"
+              placeholder="Jan Kowalski"
+              aria-required="true"
+            >
+          </div>
+
+          <!-- Email -->
+          <div class="form-field">
+            <label for="email">Email <span class="required">*</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              autocomplete="email"
+              placeholder="jan@firma.pl"
+              aria-required="true"
+            >
+            <span class="field-hint">Wyślemy potwierdzenie i przypomnienie tutaj</span>
+          </div>
+
+          <!-- Telefon -->
+          <div class="form-field">
+            <label for="phone">Telefon <span class="required">*</span></label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              autocomplete="tel"
+              placeholder="+48 123 456 789"
+              aria-required="true"
+            >
+            <span class="field-hint">Najszybsza droga kontaktu</span>
+          </div>
+
+          <!-- Firma -->
+          <div class="form-field">
+            <label for="company">Nazwa firmy <span class="required">*</span></label>
+            <input
+              type="text"
+              id="company"
+              name="company"
+              required
+              autocomplete="organization"
+              placeholder="Hydraulika Kowalski"
+              aria-required="true"
+            >
+          </div>
+
+          <!-- Powiat -->
+          <div class="form-field">
+            <label for="county">Powiat działalności</label>
+            <select id="county" name="county" autocomplete="address-level2">
+              <option value="">Wybierz powiat (opcjonalnie)</option>
+              <option value="wrocławski">Wrocławski</option>
+              <option value="krakowski">Krakowski</option>
+              <option value="warszawski">Warszawski</option>
+              <option value="poznański">Poznański</option>
+              <option value="gdański">Gdański</option>
+              <option value="katowicki">Katowicki</option>
+              <option value="łódzki">Łódzki</option>
+              <option value="szczecinski">Szczeciński</option>
+              <option value="bydgoski">Bydgoski</option>
+              <option value="lubelski">Lubelski</option>
+            </select>
+            <span class="field-hint">Pomaga nam przygotować się lepiej</span>
+          </div>
+
+          <!-- RODO Checkbox -->
+          <div class="form-checkbox">
+            <input
+              type="checkbox"
+              id="gdpr"
+              name="gdpr"
+              required
+              aria-required="true"
+            >
+            <label for="gdpr">
+              Zgadzam się na przetwarzanie moich danych osobowych w celu kontaktu.
+              <a href="#footer">Polityka prywatności</a>
+            </label>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn-primary btn-submit">
+            Odbierz Moją Darmową Diagnozę
+          </button>
+
+          <!-- Reassurance -->
+          <p class="form-reassurance">
+            🔒 Twoje dane są bezpieczne<br>
+            📞 Oddzwaniamy w 24h (dni robocze)<br>
+            ❌ Bez karty kredytowej • Zero zobowiązań
+          </p>
+        </form>
+
+        <!-- Privacy statement -->
+        <p class="privacy-note">
+          Szanujemy Twoją prywatność. Dane używamy tylko do kontaktu w sprawie diagnozy. Nie spamujemy.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CASE STUDY SECTION ==================== -->
+  <section id="case-study">
+    <div class="container">
+      <div class="case-container">
+        <span class="case-label">Case Study</span>
+        <h2>Jak Krzysztof Zwiększył Zapytania o 180% w 60 Dni</h2>
+
+        <div class="case-stats">
+          <div class="stat-item">
+            <span class="accent-number">180%</span>
+            <span class="stat-label">Wzrost zapytań</span>
+          </div>
+          <div class="stat-item">
+            <span class="accent-number">60</span>
+            <span class="stat-label">Dni do efektu</span>
+          </div>
+          <div class="stat-item">
+            <span class="accent-number">12k</span>
+            <span class="stat-label">Pierwsze zlecenie (zł)</span>
+          </div>
+        </div>
+
+        <blockquote class="case-quote">
+          Pierwsze zapytanie dostałem po 9 dniach. Klient znalazł mnie w Google szukając 'hydraulik miasto'. W 2 miesiące mój kalendarz się zapełnił. Wcześniej żyłem z polecenia – teraz 60% klientów to internet.
+        </blockquote>
+
+        <footer class="case-attribution">
+          <div style="width: 50px; height: 50px; border-radius: 50%; background: linear-gradient(135deg, #2B8AD3 0%, #1a5a8e 100%); display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.25rem; border: 2px solid #2B8AD3;">K</div>
+          <div>
+            <strong>Krzysztof Z.</strong><br>
+            <span class="meta">Hydraulika • Wrocław</span>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ SECTION ==================== -->
+  <section id="faq">
+    <div class="container">
+      <h2>Najczęstsze Pytania</h2>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>
+            <h3>Czy to tylko sales pitch?</h3>
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Nie. Żadnego sales pitchu – tylko praktyczne rekomendacje. Możesz wdrożyć je sam lub poprosić nas o pomoc. Zero presji.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <h3>Ile to zajmie czasu?</h3>
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>30 minut rozmowy + 5 minut wypełnienia formularza. To wszystko z Twojej strony.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <h3>Co się stanie po audycie?</h3>
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Otrzymasz PDF z raportem 7 luk + priorytetyzowany plan działania. Możesz go wdrożyć sam, z naszą pomocą lub w ogóle nie wdrażać. Bez zobowiązań.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <h3>Czy muszę coś przygotować?</h3>
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Nie. Przyjdź na rozmowę z otwartą głową. Jeśli masz login do Google My Business lub Analytics – super, ale nie jest wymagane.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <h3>Czy to faktycznie darmowe?</h3>
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Tak. 100% gratis. Bez ukrytych kosztów, bez karty kredytowej, bez zobowiązań. Nawet jeśli nic nie kupisz – raport jest Twój.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <h3>Kiedy zobaczę pierwsze efekty?</h3>
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Zależy od wdrożenia. Niektóre rzeczy działają natychmiast (np. optymalizacja wizytówki Google), inne potrzebują 2-3 miesięcy (np. widoczność w Google).</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FINAL CTA SECTION ==================== -->
+  <section id="final-cta">
+    <div class="container">
+      <h2>Gotowy Odkryć, Co Kosztuje Cię Klientów?</h2>
+      <p>Wypełnij formularz powyżej. Oddzwonimy w 24h.</p>
+
+      <a href="#booking-form" class="btn-primary btn-scroll">
+        Odbierz Moją Darmową Diagnozę
+      </a>
+
+      <p class="cta-reassurance">
+        🔒 Bez karty • 📞 24h • ❌ Zero zobowiązań
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">Webiko</div>
+          <p>Sieć 100 portali lokalnych</p>
+        </div>
+
+        <nav class="footer-nav">
+          <a href="#footer">Polityka prywatności</a>
+          <a href="#footer">Kontakt</a>
+          <a href="mailto:kontakt@webiko.pl">kontakt@webiko.pl</a>
+          <a href="tel:+48123456789">+48 123 456 789</a>
+        </nav>
+
+        <div class="footer-meta">
+          <p>&copy; 2025 Webiko</p>
+          <p>Wrocław, Polska</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast notification (hidden by default) -->
+  <div id="toast" class="toast"></div>
+
+  <!-- ==================== JAVASCRIPT ==================== -->
+  <script>
+    // ==================== SMOOTH SCROLL ====================
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // ==================== INTERSECTION OBSERVER (Fade-in animations) ====================
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    // Observe all sections except hero
+    document.querySelectorAll('section:not(#hero)').forEach(section => {
+      observer.observe(section);
+    });
+
+    // ==================== FAQ ACCORDION ====================
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const summary = item.querySelector('summary');
+
+      summary.addEventListener('click', () => {
+        // Close other items (optional - accordion behavior)
+        faqItems.forEach(other => {
+          if (other !== item && other.open) {
+            other.open = false;
+          }
+        });
+      });
+    });
+
+    // ==================== FORM HANDLING ====================
+    const form = document.getElementById('audit-form');
+    const submitButton = form.querySelector('.btn-submit');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      // Get form data
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData.entries());
+
+      // Validate
+      if (!data.name || !data.email || !data.phone || !data.company) {
+        showToast('Wypełnij wszystkie wymagane pola', 'error');
+        return;
+      }
+
+      if (!data.gdpr) {
+        showToast('Musisz zaakceptować politykę prywatności', 'error');
+        return;
+      }
+
+      // Email validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(data.email)) {
+        showToast('Email wygląda niepoprawnie. Sprawdź czy nie ma literówki.', 'error');
+        return;
+      }
+
+      // Phone validation (basic)
+      const phoneRegex = /^[+]?[(]?[0-9]{1,4}[)]?[-\s\.]?[(]?[0-9]{1,4}[)]?[-\s\.]?[0-9]{1,9}$/;
+      if (!phoneRegex.test(data.phone.replace(/\s/g, ''))) {
+        showToast('Brakuje numeru telefonu – to najszybsza droga, by oddzwonić.', 'error');
+        return;
+      }
+
+      // Loading state
+      submitButton.classList.add('loading');
+      submitButton.disabled = true;
+
+      // Simulate API call (replace with actual endpoint)
+      try {
+        // await fetch('/api/submit', {
+        //   method: 'POST',
+        //   headers: { 'Content-Type': 'application/json' },
+        //   body: JSON.stringify(data)
+        // });
+
+        // Simulate delay
+        await new Promise(resolve => setTimeout(resolve, 2000));
+
+        // Success
+        showToast('Dziękujemy! Oddzwonimy w ciągu 24h.', 'success');
+        form.reset();
+
+        // Scroll to thank you message or redirect
+        setTimeout(() => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }, 2000);
+
+      } catch (error) {
+        showToast('Coś poszło nie tak. Spróbuj ponownie lub zadzwoń: +48 123 456 789', 'error');
+      } finally {
+        submitButton.classList.remove('loading');
+        submitButton.disabled = false;
+      }
+    });
+
+    // ==================== TOAST NOTIFICATION ====================
+    function showToast(message, type = 'success') {
+      const toast = document.getElementById('toast');
+      toast.textContent = message;
+      toast.className = `toast ${type}`;
+
+      // Show toast
+      setTimeout(() => {
+        toast.classList.add('show');
+      }, 100);
+
+      // Hide after 5 seconds
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 5000);
+    }
+
+    // ==================== ANALYTICS (Placeholder) ====================
+    // Google Analytics 4 tracking
+    // Replace with your GA4 measurement ID
+    /*
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+
+    // Track form start
+    document.getElementById('name').addEventListener('focus', () => {
+      gtag('event', 'form_start', {
+        form_name: 'Audit Booking'
+      });
+    }, { once: true });
+
+    // Track CTA clicks
+    document.querySelectorAll('.btn-primary').forEach(btn => {
+      btn.addEventListener('click', () => {
+        gtag('event', 'cta_click', {
+          cta_text: btn.textContent.trim(),
+          cta_location: btn.closest('section').id
+        });
+      });
+    });
+
+    // Track scroll depth
+    let scrollDepth = [
+      { percent: 25, tracked: false },
+      { percent: 50, tracked: false },
+      { percent: 75, tracked: false },
+      { percent: 100, tracked: false }
+    ];
+
+    window.addEventListener('scroll', () => {
+      const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+
+      scrollDepth.forEach((depth, index) => {
+        if (scrollPercent >= depth.percent && !depth.tracked) {
+          gtag('event', 'scroll', {
+            percent_scrolled: depth.percent
+          });
+          scrollDepth[index].tracked = true;
+        }
+      });
+    });
+    */
+
+    // ==================== PERFORMANCE MONITORING ====================
+    // Log Core Web Vitals (optional)
+    if ('PerformanceObserver' in window) {
+      // LCP
+      new PerformanceObserver((entryList) => {
+        const entries = entryList.getEntries();
+        const lastEntry = entries[entries.length - 1];
+        console.log('LCP:', lastEntry.renderTime || lastEntry.loadTime);
+      }).observe({ entryTypes: ['largest-contentful-paint'] });
+
+      // FID (deprecated, use INP)
+      new PerformanceObserver((entryList) => {
+        const entries = entryList.getEntries();
+        entries.forEach(entry => {
+          console.log('FID:', entry.processingStart - entry.startTime);
+        });
+      }).observe({ entryTypes: ['first-input'] });
+
+      // CLS
+      let clsScore = 0;
+      new PerformanceObserver((entryList) => {
+        for (const entry of entryList.getEntries()) {
+          if (!entry.hadRecentInput) {
+            clsScore += entry.value;
+          }
+        }
+        console.log('CLS:', clsScore);
+      }).observe({ entryTypes: ['layout-shift'] });
+    }
+  </script>
+
+</body>
+</html>
