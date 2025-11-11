@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Bezpłatna Diagnoza 30 min - Odkryj Ukryte Luki w Widoczności | Webiko</title>
+  <meta name="description" content="Darmowy 30-minutowy audyt marketingu lokalnego. Dowiedz się gdzie tracisz klientów. Bez zobowiązań, bez sales pitchu.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Bezpłatna Diagnoza - Odkryj Co Kosztuje Cię Klientów">
+  <meta property="og:description" content="30 minut + raport 7 luk + plan działania. Zero sprzedaży, same fakty.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://webiko.pl/og-image.jpg">
+
+  <!-- Favicon Inline SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='75' font-size='75' fill='%23DA2E45' font-family='Space Grotesk, sans-serif' font-weight='700'%3Ew%3C/text%3E%3C/svg%3E">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
+
+  <!-- Schema.org Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Marketing lokalny - diagnoza bezpłatna",
+    "provider": {
+      "@type": "Organization",
+      "name": "Webiko",
+      "url": "https://webiko.pl"
+    },
+    "areaServed": "PL",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "PLN"
+    }
+  }
+  </script>
+
+  <style>
+    /* ========== RESET & BASE STYLES ========== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* ========== CSS VARIABLES ========== */
+    :root {
+      /* Brand Colors */
+      --webiko-red: #DA2E45;
+      --webiko-blue: #2B8AD3;
+
+      /* Neutrals */
+      --graphite: #2A2E36;
+      --bg-primary: #F7F8FA;
+      --border-subtle: #E7E9EE;
+      --text-meta: #9AA3AE;
+
+      /* Tints */
+      --red-light: #E24558;
+      --red-dark: #C7283E;
+      --blue-light: #3A96DB;
+      --blue-dark: #2479BD;
+
+      /* Warm accents */
+      --warm-beige: #F4EFEA;
+
+      /* Font families */
+      --font-heading: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+      --font-body: 'Source Sans 3', system-ui, -apple-system, sans-serif;
+      --font-accent: 'Fraunces', Georgia, serif;
+
+      /* Font sizes (fluid typography) */
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.825rem + 0.25vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1.05rem + 0.375vw, 1.25rem);
+      --text-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+      --text-2xl: clamp(1.5rem, 1.35rem + 0.75vw, 2rem);
+      --text-3xl: clamp(2rem, 1.75rem + 1.25vw, 3rem);
+      --text-4xl: clamp(2.5rem, 2rem + 2.5vw, 4rem);
+
+      /* Line heights */
+      --leading-tight: 1.15;
+      --leading-normal: 1.5;
+      --leading-relaxed: 1.75;
+
+      /* Organic spacing */
+      --space-xs: 0.45rem;
+      --space-sm: 0.85rem;
+      --space-md: 1.75rem;
+      --space-lg: 2.3rem;
+      --space-xl: 3.1rem;
+      --space-2xl: 4.2rem;
+      --space-3xl: 5.8rem;
+
+      /* Grid gaps */
+      --gap-1: 1.75rem;
+      --gap-2: 2.1rem;
+      --gap-3: 2.3rem;
+      --gap-4: 1.9rem;
+
+      /* Shadows */
+      --shadow-sm:
+        2px 7px 15px rgba(0,0,0,.08),
+        -1px 2px 8px rgba(0,0,0,.05);
+
+      --shadow-md:
+        3px 10px 20px rgba(0,0,0,.1),
+        -2px 3px 10px rgba(0,0,0,.06);
+
+      --shadow-lg:
+        5px 15px 30px rgba(0,0,0,.12),
+        -3px 5px 15px rgba(0,0,0,.08);
+
+      --shadow-hover:
+        2px 12px 25px rgba(0,0,0,.15),
+        -1px 4px 12px rgba(0,0,0,.1);
+
+      /* Animations */
+      --ease-smooth: cubic-bezier(.22, .61, .36, 1);
+      --ease-bounce: cubic-bezier(.68, -.55, .265, 1.55);
+      --duration-fast: 220ms;
+      --duration-normal: 280ms;
+      --duration-slow: 420ms;
+    }
+
+    body {
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      line-height: var(--leading-normal);
+      color: var(--graphite);
+      background: var(--bg-primary);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* ========== TYPOGRAPHY ========== */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-heading);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: var(--leading-tight);
+      margin-bottom: var(--space-md);
+    }
+
+    h1 {
+      font-size: var(--text-4xl);
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: var(--text-3xl);
+    }
+
+    h3 {
+      font-size: var(--text-xl);
+    }
+
+    p {
+      margin-bottom: var(--space-md);
+    }
+
+    .accent-number {
+      font-family: var(--font-accent);
+      font-weight: 600;
+      font-variation-settings: 'opsz' 72;
+      color: var(--webiko-red);
+    }
+
+    /* ========== LAYOUT ========== */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    section {
+      padding: var(--space-3xl) 0;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s var(--ease-smooth), transform 0.6s var(--ease-smooth);
+    }
+
+    section.fade-in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ========== BUTTONS ========== */
+    .btn-primary {
+      display: inline-block;
+      background: var(--webiko-red);
+      color: white;
+      padding: 0.9rem 1.2rem;
+      border-radius: 14px;
+      font-weight: 600;
+      font-size: var(--text-base);
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition:
+        transform var(--duration-normal) var(--ease-smooth),
+        box-shadow var(--duration-normal) var(--ease-smooth);
+      font-family: var(--font-body);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow:
+        0 8px 20px rgba(218, 46, 69, 0.3),
+        0 3px 8px rgba(218, 46, 69, 0.2);
+    }
+
+    .btn-primary:active {
+      transform: translateY(0);
+    }
+
+    .btn-hero {
+      font-size: var(--text-lg);
+      padding: 1.2rem 2rem;
+    }
+
+    .btn-submit {
+      width: 100%;
+      padding: 1.2rem 2rem;
+      font-size: var(--text-lg);
+    }
+
+    .btn-submit.loading::after {
+      content: '';
+      display: inline-block;
+      width: 1rem;
+      height: 1rem;
+      border: 2px solid white;
+      border-top-color: transparent;
+      border-radius: 50%;
+      animation: spin 0.6s linear infinite;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    /* ========== FOCUS STATES ========== */
+    :focus-visible {
+      outline: 2px solid var(--webiko-blue);
+      outline-offset: 3px;
+    }
+
+    /* ========== HEADER ========== */
+    .site-header {
+      position: sticky;
+      top: 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: var(--space-md) 0;
+      z-index: 100;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: var(--font-heading);
+      font-size: var(--text-2xl);
+      font-weight: 700;
+      color: var(--webiko-red);
+      text-decoration: none;
+    }
+
+    .header-phone {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      color: var(--graphite);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color var(--duration-fast);
+    }
+
+    .header-phone:hover {
+      color: var(--webiko-blue);
+    }
+
+    .phone-icon {
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+    }
+
+    /* ========== HERO SECTION ========== */
+    .hero {
+      padding-top: var(--space-3xl);
+      padding-bottom: var(--space-3xl);
+      background: linear-gradient(135deg, #ffffff 0%, var(--bg-primary) 100%);
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+    }
+
+    .hero-content {
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      margin-bottom: var(--space-lg);
+    }
+
+    .hero h2 {
+      font-family: var(--font-body);
+      font-size: var(--text-xl);
+      font-weight: 400;
+      color: var(--text-meta);
+      margin-bottom: var(--space-xl);
+    }
+
+    .hero-benefits {
+      list-style: none;
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto var(--space-xl);
+    }
+
+    .hero-benefits li {
+      padding: var(--space-sm) 0;
+      font-size: var(--text-lg);
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-sm);
+    }
+
+    .hero-benefits li::before {
+      content: '✓';
+      color: var(--webiko-blue);
+      font-weight: bold;
+      font-size: var(--text-xl);
+      flex-shrink: 0;
+    }
+
+    .cta-reassurance {
+      margin-top: var(--space-md);
+      font-size: var(--text-sm);
+      color: var(--text-meta);
+    }
+
+    .trust-inline {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-xl);
+      margin-top: var(--space-xl);
+      flex-wrap: wrap;
+    }
+
+    .trust-inline span {
+      font-size: var(--text-sm);
+      color: var(--text-meta);
+    }
+
+    .hero-visual {
+      margin-top: var(--space-2xl);
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-visual img {
+      width: 100%;
+      height: auto;
+      border-radius: 14px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    /* ========== SOCIAL PROOF SECTION ========== */
+    .social-proof {
+      background: white;
+    }
+
+    .social-proof h2 {
+      text-align: center;
+      margin-bottom: var(--space-2xl);
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--gap-2);
+      margin-bottom: var(--space-xl);
+    }
+
+    .testimonial {
+      background: var(--warm-beige);
+      border-radius: 14px;
+      padding: var(--space-lg);
+      box-shadow: var(--shadow-sm);
+      transition:
+        transform var(--duration-normal) var(--ease-smooth),
+        box-shadow var(--duration-normal) var(--ease-smooth);
+    }
+
+    .testimonial:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .testimonial-photo {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: var(--space-md);
+      border: 3px solid var(--webiko-red);
+    }
+
+    .testimonial blockquote {
+      margin-bottom: var(--space-md);
+      font-style: italic;
+      color: var(--graphite);
+    }
+
+    .testimonial footer {
+      font-size: var(--text-sm);
+    }
+
+    .testimonial strong {
+      color: var(--graphite);
+      font-weight: 600;
+    }
+
+    .meta {
+      color: var(--text-meta);
+      font-size: var(--text-sm);
+    }
+
+    .trust-numbers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--gap-2);
+      margin-top: var(--space-2xl);
+    }
+
+    .stat {
+      text-align: center;
+      padding: var(--space-lg);
+      background: white;
+      border-radius: 14px;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .stat .accent-number {
+      display: block;
+      font-size: var(--text-3xl);
+      margin-bottom: var(--space-sm);
+    }
+
+    .stat-label {
+      display: block;
+      color: var(--text-meta);
+      font-size: var(--text-sm);
+    }
+
+    /* ========== DELIVERABLES SECTION ========== */
+    .deliverables h2 {
+      text-align: center;
+      margin-bottom: var(--space-2xl);
+    }
+
+    .deliverable-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--gap-2);
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: var(--space-lg);
+      transition:
+        transform var(--duration-normal) var(--ease-smooth),
+        box-shadow var(--duration-normal) var(--ease-smooth);
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .card-icon {
+      font-size: 2.5rem;
+      margin-bottom: var(--space-md);
+    }
+
+    .card h3 {
+      margin-bottom: var(--space-sm);
+      color: var(--graphite);
+    }
+
+    .card p {
+      margin-bottom: 0;
+      color: var(--text-meta);
+      font-size: var(--text-sm);
+    }
+
+    /* ========== PROCESS SECTION ========== */
+    .process {
+      background: white;
+    }
+
+    .process h2 {
+      text-align: center;
+      margin-bottom: var(--space-2xl);
+    }
+
+    .process-steps {
+      display: flex;
+      flex-direction: column;
+      gap: var(--gap-2);
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .step {
+      background: var(--bg-primary);
+      border-radius: 14px;
+      padding: var(--space-lg);
+      border: 2px solid var(--border-subtle);
+      position: relative;
+    }
+
+    .step-number {
+      font-size: var(--text-3xl);
+      margin-bottom: var(--space-md);
+      display: block;
+    }
+
+    .step h3 {
+      margin-bottom: var(--space-sm);
+    }
+
+    .step p {
+      margin-bottom: 0;
+      color: var(--text-meta);
+    }
+
+    .step-arrow {
+      text-align: center;
+      font-size: var(--text-2xl);
+      color: var(--webiko-blue);
+      display: none;
+    }
+
+    @media (min-width: 1024px) {
+      .process-steps {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+
+      .step {
+        flex: 1;
+      }
+
+      .step-arrow {
+        display: block;
+        align-self: center;
+        flex-shrink: 0;
+      }
+    }
+
+    /* ========== FORM SECTION ========== */
+    .form-section {
+      background: linear-gradient(135deg, var(--webiko-blue) 0%, var(--blue-dark) 100%);
+      color: white;
+    }
+
+    .form-container {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .form-header {
+      text-align: center;
+      margin-bottom: var(--space-xl);
+    }
+
+    .form-header h2 {
+      color: white;
+    }
+
+    .form-header p {
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .form-field {
+      margin-bottom: var(--space-lg);
+    }
+
+    .form-field label {
+      display: block;
+      margin-bottom: var(--space-sm);
+      font-weight: 600;
+      color: white;
+    }
+
+    .required {
+      color: var(--webiko-red);
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+      width: 100%;
+      padding: 0.9rem 1.2rem;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 10px;
+      font-size: var(--text-base);
+      font-family: var(--font-body);
+      background: rgba(255, 255, 255, 0.95);
+      transition: border-color var(--duration-fast), box-shadow var(--duration-fast);
+    }
+
+    input:focus,
+    select:focus {
+      outline: none;
+      border-color: white;
+      box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+    }
+
+    .field-hint {
+      display: block;
+      margin-top: var(--space-xs);
+      font-size: var(--text-sm);
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .form-checkbox {
+      margin-bottom: var(--space-lg);
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-sm);
+    }
+
+    .form-checkbox input[type="checkbox"] {
+      width: auto;
+      margin-top: 4px;
+      flex-shrink: 0;
+    }
+
+    .form-checkbox label {
+      font-weight: 400;
+      font-size: var(--text-sm);
+    }
+
+    .form-checkbox a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    .form-reassurance {
+      text-align: center;
+      margin-top: var(--space-lg);
+      font-size: var(--text-sm);
+      color: rgba(255, 255, 255, 0.9);
+      line-height: var(--leading-relaxed);
+    }
+
+    .privacy-note {
+      margin-top: var(--space-xl);
+      text-align: center;
+      font-size: var(--text-sm);
+      color: rgba(255, 255, 255, 0.8);
+      font-style: italic;
+    }
+
+    /* ========== CASE STUDY SECTION ========== */
+    .case-study {
+      background: var(--warm-beige);
+    }
+
+    .case-container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 14px;
+      padding: var(--space-2xl);
+      box-shadow: var(--shadow-md);
+    }
+
+    .case-label {
+      display: inline-block;
+      background: var(--webiko-red);
+      color: white;
+      padding: var(--space-xs) var(--space-md);
+      border-radius: 20px;
+      font-size: var(--text-sm);
+      font-weight: 600;
+      margin-bottom: var(--space-md);
+    }
+
+    .case-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: var(--gap-2);
+      margin: var(--space-xl) 0;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: var(--space-md);
+      background: var(--bg-primary);
+      border-radius: 10px;
+    }
+
+    .stat-item .accent-number {
+      display: block;
+      font-size: var(--text-2xl);
+      margin-bottom: var(--space-xs);
+    }
+
+    .case-quote {
+      font-size: var(--text-lg);
+      font-style: italic;
+      color: var(--graphite);
+      border-left: 4px solid var(--webiko-red);
+      padding-left: var(--space-lg);
+      margin: var(--space-xl) 0;
+    }
+
+    .case-attribution {
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+      margin-top: var(--space-xl);
+    }
+
+    .avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--webiko-blue);
+    }
+
+    /* ========== FAQ SECTION ========== */
+    .faq h2 {
+      text-align: center;
+      margin-bottom: var(--space-2xl);
+    }
+
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: white;
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      margin-bottom: var(--space-md);
+      overflow: hidden;
+    }
+
+    .faq-item summary {
+      padding: var(--space-lg);
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      transition: background var(--duration-fast);
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary:hover {
+      background: var(--bg-primary);
+    }
+
+    .faq-item summary h3 {
+      margin: 0;
+      font-size: var(--text-lg);
+    }
+
+    .faq-icon {
+      font-size: var(--text-2xl);
+      color: var(--webiko-blue);
+      transition: transform var(--duration-fast);
+    }
+
+    .faq-item[open] .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      padding: 0 var(--space-lg) var(--space-lg);
+      color: var(--text-meta);
+    }
+
+    .faq-answer p {
+      margin-bottom: 0;
+    }
+
+    /* ========== FINAL CTA SECTION ========== */
+    .final-cta {
+      background: linear-gradient(135deg, var(--webiko-red) 0%, var(--red-dark) 100%);
+      color: white;
+      text-align: center;
+    }
+
+    .final-cta h2 {
+      color: white;
+    }
+
+    .final-cta p {
+      color: rgba(255, 255, 255, 0.95);
+    }
+
+    .btn-scroll {
+      display: inline-block;
+      margin-top: var(--space-md);
+      background: white;
+      color: var(--webiko-red);
+    }
+
+    .btn-scroll:hover {
+      background: var(--bg-primary);
+    }
+
+    /* ========== FOOTER ========== */
+    .site-footer {
+      background: var(--graphite);
+      color: white;
+      padding: var(--space-2xl) 0;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: var(--gap-3);
+    }
+
+    .footer-brand {
+      margin-bottom: var(--space-md);
+    }
+
+    .footer-logo {
+      font-family: var(--font-heading);
+      font-size: var(--text-2xl);
+      font-weight: 700;
+      color: var(--webiko-red);
+      margin-bottom: var(--space-sm);
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+
+    .footer-nav a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      transition: color var(--duration-fast);
+    }
+
+    .footer-nav a:hover {
+      color: white;
+    }
+
+    .footer-meta {
+      font-size: var(--text-sm);
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .footer-meta p {
+      margin-bottom: var(--space-xs);
+    }
+
+    /* ========== TOAST NOTIFICATIONS ========== */
+    .toast {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow-lg);
+      transform: translateY(100px);
+      opacity: 0;
+      transition:
+        transform var(--duration-normal) var(--ease-smooth),
+        opacity var(--duration-normal);
+      z-index: 1000;
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .toast.success {
+      background: #10B981;
+      color: white;
+    }
+
+    .toast.error {
+      background: var(--webiko-red);
+      color: white;
+    }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 767px) {
+      .header-phone span {
+        display: none;
+      }
+
+      .hero-benefits {
+        font-size: var(--text-sm);
+      }
+
+      .trust-inline {
+        flex-direction: column;
+        gap: var(--space-sm);
+      }
+
+      .deliverable-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .testimonials-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .btn-primary {
+        padding: 1rem 1.5rem;
+        font-size: var(--text-lg);
+      }
+
+      section {
+        padding: var(--space-2xl) 0;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .deliverable-cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .deliverable-cards {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-content">
+        <a href="#" class="logo">Webiko</a>
+        <a href="tel:+48123456789" class="header-phone">
+          <svg class="phone-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 16.92V19.92C22 20.4728 21.5523 20.92 21 20.92H18C8.61116 20.92 1 13.3088 1 3.92001V0.920013C1 0.367227 1.44772 -0.0799866 2 -0.0799866H5C5.55228 -0.0799866 6 0.367227 6 0.920013V5.42001C6 5.97279 5.55228 6.42001 5 6.42001H3.5C3.5 12.4851 8.43502 17.42 14.5 17.42V15.92C14.5 15.3672 14.9477 14.92 15.5 14.92H20C20.5523 14.92 21 15.3672 21 15.92V16.92H22Z" fill="currentColor"/>
+          </svg>
+          <span>+48 123 456 789</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Odkryj, Gdzie Tracisz 30% Zleceń<br>w Ciągu 30-Minutowej Diagnozy</h1>
+
+          <h2>Bezpłatna rozmowa + raport 7 luk + plan działania.<br>Bez zobowiązań. Bez sales pitchu. Tylko fakty.</h2>
+
+          <ul class="hero-benefits">
+            <li><strong>30 minut rozmowy</strong> – zrozumiemy Twoją sytuację</li>
+            <li><strong>Raport 7 luk</strong> – dokładnie co naprawić (PDF)</li>
+            <li><strong>Plan działania</strong> – priorytetyzowane kroki na 90 dni</li>
+          </ul>
+
+          <a href="#booking-form" class="btn-primary btn-hero">
+            Odbierz Moją Darmową Diagnozę
+          </a>
+
+          <p class="cta-reassurance">Bez karty kredytowej • 100% gratis • Zero presji</p>
+
+          <div class="trust-inline">
+            <span>🔒 Dane chronione</span>
+            <span>📊 500+ audytów</span>
+            <span>📞 Oddzwaniamy w 24h</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SOCIAL PROOF SECTION ========== -->
+    <section class="social-proof" id="social-proof">
+      <div class="container">
+        <h2>Sprawdzone Wyniki</h2>
+
+        <div class="testimonials-grid">
+          <article class="testimonial">
+            <blockquote>
+              <p>"Pierwsze zapytanie dostałem po 9 dniach od publikacji. Klient znalazł mnie w Google szukając 'hydraulik Wrocław'. Zlecenie na 12,000 zł."</p>
+            </blockquote>
+            <footer>
+              <strong>Krzysztof Z.</strong><br>
+              <span class="meta">Hydraulika • Wrocław</span>
+            </footer>
+          </article>
+
+          <article class="testimonial">
+            <blockquote>
+              <p>"Wcześniej żyłem tylko z polecenia. Teraz 60% klientów przychodzi z internetu. Kalendarz zapełniony na 2 miesiące do przodu."</p>
+            </blockquote>
+            <footer>
+              <strong>Piotr M.</strong><br>
+              <span class="meta">Fotowoltaika • Poznań</span>
+            </footer>
+          </article>
+
+          <article class="testimonial">
+            <blockquote>
+              <p>"Nie wiedziałem, że moja wizytówka Google jest niekompletna. Po optymalizacji zapytania wzrosły o 85% w miesiąc."</p>
+            </blockquote>
+            <footer>
+              <strong>Jan K.</strong><br>
+              <span class="meta">Remonty • Kraków</span>
+            </footer>
+          </article>
+        </div>
+
+        <div class="trust-numbers">
+          <div class="stat">
+            <span class="accent-number">500+</span>
+            <span class="stat-label">Audytów przeprowadzonych</span>
+          </div>
+          <div class="stat">
+            <span class="accent-number">100</span>
+            <span class="stat-label">Portali lokalnych</span>
+          </div>
+          <div class="stat">
+            <span class="accent-number">120k</span>
+            <span class="stat-label">UU miesięcznie</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CO ODKRYJESZ SECTION ========== -->
+    <section class="deliverables" id="deliverables">
+      <div class="container">
+        <h2>Co Dokładnie Odkryjesz w Diagnozie?</h2>
+
+        <div class="deliverable-cards">
+          <article class="card">
+            <div class="card-icon">🔍</div>
+            <h3>Luka #1: Widoczność w Google</h3>
+            <p>Sprawdzimy czy jesteś w top 3 dla kluczowych fraz lokalnych (np. "hydraulik [miasto]").</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">📍</div>
+            <h3>Luka #2: Wizytówka Google (GBP)</h3>
+            <p>Czy Twoja wizytówka jest zweryfikowana, kompletna i optymalizowana?</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">⭐</div>
+            <h3>Luka #3: Opinie i recenzje</h3>
+            <p>Ile masz opinii vs konkurencja? Jak szybko na nie odpowiadasz?</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">🌐</div>
+            <h3>Luka #4: Strona WWW (jeśli masz)</h3>
+            <p>Mobilna, szybka, z CTA? Sprawdzimy Core Web Vitals.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">📊</div>
+            <h3>Luka #5: Portale lokalne</h3>
+            <p>Czy jesteś widoczny w portalach czytanych przez 5k osób z okolicy?</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">💰</div>
+            <h3>Luka #6: Płatne reklamy (jeśli używasz)</h3>
+            <p>Google Ads, Facebook – czy wydajesz skutecznie czy przepalasz budżet?</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">📞</div>
+            <h3>Luka #7: Ścieżka kontaktu</h3>
+            <p>Jak łatwo klient może Cię znaleźć i zadzwonić? Ile kliknięć to wymaga?</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== JAK TO DZIAŁA SECTION ========== -->
+    <section class="process" id="process">
+      <div class="container">
+        <h2>Jak Przebiega Diagnoza?</h2>
+
+        <div class="process-steps">
+          <article class="step">
+            <span class="step-number accent-number">1</span>
+            <h3>Wypełniasz formularz (2 min)</h3>
+            <p>Imię, firma, telefon, powiat. To wszystko.</p>
+          </article>
+
+          <div class="step-arrow">→</div>
+
+          <article class="step">
+            <span class="step-number accent-number">2</span>
+            <h3>Odbieramy telefon (24h)</h3>
+            <p>Umawiamy termin wygodny dla Ciebie. Wysyłamy przypomnienie.</p>
+          </article>
+
+          <div class="step-arrow">→</div>
+
+          <article class="step">
+            <span class="step-number accent-number">3</span>
+            <h3>Rozmowa 30 minut</h3>
+            <p>Analizujemy Twoją sytuację. Pytamy o cele, budżet, konkurencję.</p>
+          </article>
+
+          <div class="step-arrow">→</div>
+
+          <article class="step">
+            <span class="step-number accent-number">4</span>
+            <h3>Otrzymujesz raport (3 dni)</h3>
+            <p>PDF z 7 lukami + priorytetyzowany plan działania na 90 dni. Możesz go wdrożyć sam lub z nami.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FORMULARZ GŁÓWNY SECTION ========== -->
+    <section class="form-section" id="booking-form">
+      <div class="container">
+        <div class="form-container">
+          <div class="form-header">
+            <h2>Zarezerwuj Swoją Darmową Diagnozę</h2>
+            <p>Wypełnienie zajmuje 2 minuty. Oddzwonimy w ciągu 24 godzin.</p>
+          </div>
+
+          <form id="audit-form">
+            <!-- Field 1: Imię i Nazwisko -->
+            <div class="form-field">
+              <label for="name">Imię i nazwisko <span class="required">*</span></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                autocomplete="name"
+                placeholder="Jan Kowalski"
+                aria-required="true"
+              >
+            </div>
+
+            <!-- Field 2: Email -->
+            <div class="form-field">
+              <label for="email">Email <span class="required">*</span></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                autocomplete="email"
+                placeholder="jan@firma.pl"
+                aria-required="true"
+              >
+              <span class="field-hint">Wyślemy potwierdzenie i przypomnienie tutaj</span>
+            </div>
+
+            <!-- Field 3: Telefon -->
+            <div class="form-field">
+              <label for="phone">Telefon <span class="required">*</span></label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                autocomplete="tel"
+                placeholder="+48 123 456 789"
+                aria-required="true"
+              >
+              <span class="field-hint">Najszybsza droga kontaktu</span>
+            </div>
+
+            <!-- Field 4: Firma -->
+            <div class="form-field">
+              <label for="company">Nazwa firmy <span class="required">*</span></label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                required
+                autocomplete="organization"
+                placeholder="Hydraulika Kowalski"
+                aria-required="true"
+              >
+            </div>
+
+            <!-- Field 5: Powiat (dropdown) -->
+            <div class="form-field">
+              <label for="county">Powiat działalności</label>
+              <select id="county" name="county" autocomplete="address-level2">
+                <option value="">Wybierz powiat (opcjonalnie)</option>
+                <option value="wrocławski">Wrocławski</option>
+                <option value="krakowski">Krakowski</option>
+                <option value="warszawski">Warszawski</option>
+                <option value="poznański">Poznański</option>
+                <option value="gdański">Gdański</option>
+                <option value="łódzki">Łódzki</option>
+                <option value="katowicki">Katowicki</option>
+                <option value="szczecinski">Szczeciński</option>
+                <option value="bydgoski">Bydgoski</option>
+                <option value="lubelski">Lubelski</option>
+              </select>
+              <span class="field-hint">Pomaga nam przygotować się lepiej</span>
+            </div>
+
+            <!-- RODO Checkbox -->
+            <div class="form-checkbox">
+              <input
+                type="checkbox"
+                id="gdpr"
+                name="gdpr"
+                required
+                aria-required="true"
+              >
+              <label for="gdpr">
+                Zgadzam się na przetwarzanie moich danych osobowych w celu kontaktu.
+                <a href="#" target="_blank">Polityka prywatności</a>
+              </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn-primary btn-submit">
+              Odbierz Moją Darmową Diagnozę
+            </button>
+
+            <!-- Reassurance -->
+            <p class="form-reassurance">
+              🔒 Twoje dane są bezpieczne<br>
+              📞 Oddzwaniamy w 24h (dni robocze)<br>
+              ❌ Bez karty kredytowej • Zero zobowiązań
+            </p>
+          </form>
+
+          <!-- Privacy statement -->
+          <p class="privacy-note">
+            Szanujemy Twoją prywatność. Dane używamy tylko do kontaktu w sprawie diagnozy. Nie spamujemy.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CASE STUDY SECTION ========== -->
+    <section class="case-study" id="case-study">
+      <div class="container">
+        <div class="case-container">
+          <span class="case-label">Case Study</span>
+          <h2>Jak Krzysztof Zwiększył Zapytania o 180% w 60 Dni</h2>
+
+          <div class="case-stats">
+            <div class="stat-item">
+              <span class="accent-number">180%</span>
+              <span class="stat-label">Wzrost zapytań</span>
+            </div>
+            <div class="stat-item">
+              <span class="accent-number">60</span>
+              <span class="stat-label">Dni do efektu</span>
+            </div>
+            <div class="stat-item">
+              <span class="accent-number">12k</span>
+              <span class="stat-label">Pierwsze zlecenie (zł)</span>
+            </div>
+          </div>
+
+          <blockquote class="case-quote">
+            "Pierwsze zapytanie dostałem po 9 dniach. Klient znalazł mnie w Google szukając 'hydraulik Wrocław'. W 2 miesiące mój kalendarz się zapełnił. Wcześniej żyłem z polecenia – teraz 60% klientów to internet."
+          </blockquote>
+
+          <footer class="case-attribution">
+            <div>
+              <strong>Krzysztof Z.</strong><br>
+              <span class="meta">Hydraulika • Wrocław</span>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FAQ SECTION ========== -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <h2>Najczęstsze Pytania</h2>
+
+        <div class="faq-list">
+          <!-- Q1: Sales pitch obiekcja -->
+          <details class="faq-item">
+            <summary>
+              <h3>Czy to tylko sales pitch?</h3>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Nie. Żadnego sales pitchu – tylko praktyczne rekomendacje. Możesz wdrożyć je sam lub poprosić nas o pomoc. Zero presji.</p>
+            </div>
+          </details>
+
+          <!-- Q2: Czas -->
+          <details class="faq-item">
+            <summary>
+              <h3>Ile to zajmie czasu?</h3>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>30 minut rozmowy + 5 minut wypełnienia formularza. To wszystko z Twojej strony.</p>
+            </div>
+          </details>
+
+          <!-- Q3: Co potem -->
+          <details class="faq-item">
+            <summary>
+              <h3>Co się stanie po audycie?</h3>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Otrzymasz PDF z raportem 7 luk + priorytetyzowany plan działania. Możesz go wdrożyć sam, z naszą pomocą lub w ogóle nie wdrażać. Bez zobowiązań.</p>
+            </div>
+          </details>
+
+          <!-- Q4: Przygotowanie -->
+          <details class="faq-item">
+            <summary>
+              <h3>Czy muszę coś przygotować?</h3>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Nie. Przyjdź na rozmowę z otwartą głową. Jeśli masz login do Google My Business lub Analytics – super, ale nie jest wymagane.</p>
+            </div>
+          </details>
+
+          <!-- Q5: Darmowe? -->
+          <details class="faq-item">
+            <summary>
+              <h3>Czy to faktycznie darmowe?</h3>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Tak. 100% gratis. Bez ukrytych kosztów, bez karty kredytowej, bez zobowiązań. Nawet jeśli nic nie kupisz – raport jest Twój.</p>
+            </div>
+          </details>
+
+          <!-- Q6: Kiedy efekty -->
+          <details class="faq-item">
+            <summary>
+              <h3>Kiedy zobaczę pierwsze efekty?</h3>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Zależy od wdrożenia. Niektóre rzeczy działają natychmiast (np. optymalizacja wizytówki Google), inne potrzebują 2-3 miesięcy (np. widoczność w Google).</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FINAL CTA SECTION ========== -->
+    <section class="final-cta" id="final-cta">
+      <div class="container">
+        <div class="cta-container">
+          <h2>Gotowy Odkryć, Co Kosztuje Cię Klientów?</h2>
+          <p>Wypełnij formularz poniżej. Oddzwonimy w 24h.</p>
+
+          <a href="#booking-form" class="btn-primary btn-scroll">
+            Odbierz Moją Darmową Diagnozę
+          </a>
+
+          <p class="cta-reassurance">
+            🔒 Bez karty • 📞 24h • ❌ Zero zobowiązań
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">Webiko</div>
+          <p>Sieć 100 portali lokalnych</p>
+        </div>
+
+        <nav class="footer-nav">
+          <a href="#">Polityka prywatności</a>
+          <a href="#">Kontakt</a>
+          <a href="mailto:kontakt@webiko.pl">kontakt@webiko.pl</a>
+          <a href="tel:+48123456789">+48 123 456 789</a>
+        </nav>
+
+        <div class="footer-meta">
+          <p>&copy; 2025 Webiko</p>
+          <p>Wrocław, Polska</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== TOAST NOTIFICATION ========== -->
+  <div id="toast" class="toast"></div>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    // ========== SCROLL ANIMATIONS (INTERSECTION OBSERVER) ==========
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('section').forEach(section => {
+      observer.observe(section);
+    });
+
+    // ========== SMOOTH SCROLL ==========
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // ========== FAQ ACCORDION ==========
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const summary = item.querySelector('summary');
+      const icon = item.querySelector('.faq-icon');
+
+      summary.addEventListener('click', () => {
+        setTimeout(() => {
+          icon.textContent = item.open ? '−' : '+';
+        }, 0);
+      });
+    });
+
+    // ========== FORM SUBMISSION ==========
+    const form = document.getElementById('audit-form');
+    const submitBtn = form.querySelector('.btn-submit');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      // Add loading state
+      submitBtn.classList.add('loading');
+      submitBtn.disabled = true;
+
+      // Get form data
+      const formData = new FormData(form);
+      const data = {};
+      formData.forEach((value, key) => {
+        data[key] = value;
+      });
+
+      // Simulate API call (replace with real endpoint)
+      setTimeout(() => {
+        // Remove loading state
+        submitBtn.classList.remove('loading');
+        submitBtn.disabled = false;
+
+        // Show success toast
+        showToast('Dziękujemy! Oddzwonimy w ciągu 24 godzin.', 'success');
+
+        // Reset form
+        form.reset();
+
+        // Track event (Google Analytics - uncomment when GA is set up)
+        // gtag('event', 'generate_lead', {
+        //   form_name: 'Audit Booking',
+        //   value: 0
+        // });
+
+      }, 2000);
+    });
+
+    // ========== TOAST NOTIFICATION FUNCTION ==========
+    function showToast(message, type = 'success') {
+      const toast = document.getElementById('toast');
+      toast.textContent = message;
+      toast.className = `toast ${type}`;
+
+      // Show toast
+      setTimeout(() => {
+        toast.classList.add('show');
+      }, 100);
+
+      // Hide toast after 5 seconds
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 5000);
+    }
+
+    // ========== FORM VALIDATION (HUMAN-FRIENDLY ERRORS) ==========
+    form.querySelectorAll('input[required], select[required]').forEach(field => {
+      field.addEventListener('invalid', function(e) {
+        e.preventDefault();
+
+        let message = '';
+        if (field.type === 'email') {
+          message = 'Email wygląda niepoprawnie. Sprawdź czy nie ma literówki.';
+        } else if (field.type === 'tel') {
+          message = 'Brakuje numeru telefonu – to najszybsza droga, by oddzwonić.';
+        } else {
+          message = `Proszę wypełnić pole: ${field.labels[0].textContent}`;
+        }
+
+        showToast(message, 'error');
+      });
+    });
+
+    // ========== SCROLL DEPTH TRACKING ==========
+    let scrollDepth = [
+      { percent: 25, tracked: false },
+      { percent: 50, tracked: false },
+      { percent: 75, tracked: false },
+      { percent: 100, tracked: false }
+    ];
+
+    window.addEventListener('scroll', () => {
+      const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+
+      scrollDepth.forEach((depth, index) => {
+        if (scrollPercent >= depth.percent && !depth.tracked) {
+          scrollDepth[index].tracked = true;
+
+          // Track event (Google Analytics - uncomment when GA is set up)
+          // gtag('event', 'scroll', {
+          //   percent_scrolled: depth.percent
+          // });
+        }
+      });
+    });
+
+    // ========== CTA CLICK TRACKING ==========
+    document.querySelectorAll('.btn-primary').forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Track event (Google Analytics - uncomment when GA is set up)
+        // gtag('event', 'cta_click', {
+        //   cta_text: btn.textContent.trim(),
+        //   cta_location: btn.closest('section')?.id || 'unknown'
+        // });
+      });
+    });
+  </script>
+
+</body>
+</html>
